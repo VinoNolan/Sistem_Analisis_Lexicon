@@ -1,11 +1,10 @@
 import streamlit as st
-import sqlite3
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
 
 def analisis_sentimen():
-    st.title("Analisis Sentimen Ulasan Pada Toko Online Shopee By And We")
+    st.title("Analisis Sentimen Metode Lexicon")
     st.divider()
     st.write("""
     ## Deskripsi
