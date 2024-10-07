@@ -3,13 +3,6 @@ import sqlite3
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
-        
-# Fungsi untuk mendapatkan semua path file dari database
-def get_all_file_paths():
-    with sqlite3.connect('sentimen.db') as conn:
-        c = conn.cursor()
-        c.execute('SELECT id, file_path FROM files')
-        return c.fetchall()
 
 def analisis_sentimen():
     st.title("Analisis Sentimen Ulasan Pada Toko Online Shopee By And We")
