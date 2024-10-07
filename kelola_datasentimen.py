@@ -55,7 +55,6 @@ def datasentimen():
         save_file_path(file_path)
         st.session_state['file_saved'] = True
         st.success(f'File saved as {dataset_name}')
-        st.experimental_rerun()
 
     # Tampilkan daftar file yang sudah diupload
     st.subheader('Dataset')
@@ -70,6 +69,5 @@ def datasentimen():
                 if st.button('Delete', key=f'delete_{file_id}'):
                     delete_file(file_id, file_path)
                     st.success(f'File {file_path} deleted')
-                    st.experimental_rerun()
     else:
         st.write("No files uploaded yet.")

@@ -63,7 +63,6 @@ def data_admin():
         if st.button(f"Delete Admin {admin[0]}", key=f"delete_{admin[0]}"):
             delete_admin(admin[0])
             st.success(f"Admin dengan ID {admin[0]} berhasil dihapus")
-            st.experimental_rerun()
 
         with st.expander(f"Edit Admin {admin[0]}"):
             with st.form(f"edit_admin_form_{admin[0]}"):
@@ -76,4 +75,3 @@ def data_admin():
                 if submitted:
                     edit_admin(admin[0], new_nama, new_username, new_password, new_nomor_hp, new_ig_link)
                     st.success(f"Admin dengan ID {admin[0]} berhasil diupdate")
-                    st.experimental_rerun()
