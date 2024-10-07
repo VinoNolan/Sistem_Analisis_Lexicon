@@ -27,6 +27,9 @@ def analisis_sentimen():
 
     # Pilih dataset menggunakan selectbox
     selected_dataset = st.file_uploader("Upload *file wajib .csv dan judul kolom sentimen diubah 'full_text'", type=["csv"])
+    # Contoh Dataset
+    st.subheader('Contoh dataset untuk judul full_text')
+    st.image('contohdataset.PNG')
 
     # Menampilkan dataset
     st.subheader("Dataset")
