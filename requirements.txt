@@ -1,5 +1,5 @@
 streamlit
 Sastrawi
-SQLite3-0611
-panda
+pandas
 matplotlib
+streamlit-option-menu
