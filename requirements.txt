@@ -3,4 +3,4 @@ Sastrawi
 pandas
 matplotlib
 streamlit-option-menu
-sqlite3
+db-sqlite3
