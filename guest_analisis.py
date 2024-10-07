@@ -168,7 +168,7 @@ def analisis_sentimen():
         # ====================================== END KLASIFIKASI DATA LEXICON ========================================
         
         # HASIL ANALISIS SENTIMEN
-        st.subheader(f"Hasil Analisis Sentimen Pada {selected_dataset}")
+        st.subheader(f"Hasil Sentimen")
         st.dataframe(df)
         
         # TOTAL SENTIMEN
