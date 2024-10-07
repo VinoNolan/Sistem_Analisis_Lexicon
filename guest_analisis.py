@@ -24,12 +24,9 @@ def analisis_sentimen():
     kesederhanaannya dan kecepatan implementasinya. Kamus yang digunakan merupakan InSet Kamus Lexicon Indonesia yang telah disusun oleh
     peneliti Fajri Koto dan Gemala Y. Rahmaningtyas pada penelitian sebelumnya.
     """)
-    # Mendapatkan daftar semua file yang telah diupload
-    file_paths = get_all_file_paths()
-    dataset_options = [file_path[1] for file_path in file_paths]
 
     # Pilih dataset menggunakan selectbox
-    selected_dataset = st.selectbox("Pilih Dataset", dataset_options)
+    selected_dataset = st.file_uploader("Upload *file wajib .csv dan judul kolom sentimen diubah 'full_text'", type=["csv"])
 
     # Menampilkan dataset
     st.subheader("Dataset")
