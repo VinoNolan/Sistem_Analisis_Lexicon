@@ -196,4 +196,4 @@ def analisis_sentimen():
 
         st.write(diagram_batang())
     else:
-        st.write("Silahkan upload dataset sesuai ketentuan!")
+        st.write("Silahkan upload dataset, mohon sesuai ketentuan!")
