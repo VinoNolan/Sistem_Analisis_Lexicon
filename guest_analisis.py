@@ -196,4 +196,4 @@ def analisis_sentimen():
 
         st.write(diagram_batang())
     else:
-        st.write("Belum ada dataset yang tersedia. Hubungi admin By And We.")
+        st.write("Silahkan upload dataset sesuai ketentuan!")
